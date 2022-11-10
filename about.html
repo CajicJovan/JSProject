@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>National Park Forester</title>
+<!--
+
+Template 2101 Insertion
+
+http://www.tooplate.com/view/2101-insertion
+
+-->
+  <!-- load CSS -->
+  <link rel="shortcut icon" href="img/realicon.ico" type="icon">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">        <!-- Google web font "Open Sans" -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">                                            <!-- https://getbootstrap.com/ -->
+  <link rel="stylesheet" href="css/fontawesome-all.min.css">                                      <!-- Font awesome -->
+  <link rel="stylesheet" href="css/tooplate-style.css">  
+  <link rel="stylesheet" href="css/jquery-toasts.css">                                          <!-- Templatemo style -->
+  <link rel="stylesheet" href="css/style.css">    
+
+  <script>
+    var renderPage = true;
+
+    if (navigator.userAgent.indexOf('MSIE') !== -1
+      || navigator.appVersion.indexOf('Trident/') > 0) {
+      /* Microsoft Internet Explorer detected in. */
+      alert("Please view this in a modern browser such as Chrome or Microsoft Edge.");
+      renderPage = false;
+    }
+  </script>
+
+</head>
+
+<body>
+
+  <!-- Loader -->
+  <!-- <div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div> -->
+
+  <div class="tm-main">
+
+    <div class="tm-welcome-section">
+      <div class="container tm-navbar-container">
+        <div class="row">
+          <div class="col-xl-12">
+            <nav class="navbar">
+              <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
+               aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text"><i
+                  class="fas fa-bars fa-1x"></i></span></button>
+              <div class="collapse navbar-collapse show" id="navbarSupportedContent1">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link tm-nav-link tm-text-white">Home</a>
+                </li>
+                <li class="nav-item active">
+                  <a href="about.html" class="nav-link tm-nav-link tm-text-white active">About</a>
+                </li>
+                <li class="nav-item">
+                  <a href="contact.html" class="nav-link tm-nav-link tm-text-white">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a href="author.html" class="nav-link tm-nav-link tm-text-white">Author</a>
+                </li>
+              </ul>
+            </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center tm-welcome-container">
+        <div class="tm-welcome" id='sliderContainer'>
+          <div id="text"><h1>National Park Forester</h1><br><h2>Our park is a place from the purest points of imaginations. The true heaven on earth</h2></div>
+          <span id="slider-levo" class="slider-strela" data-smer="levo"><i class="fas fa-arrow-left"></i></span>
+          <span id="slider-desno" class="slider-strela" data-smer="desno"><i class="fas fa-arrow-right"></i></span>
+          <div class="overlay"> <img src="img/slide1.jpg" alt="slide1.jpg"/></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- <div class="container">
+      <div class="slider-container tm-bg-light-green">
+      </div> -->
+
+      <div class="row tm-about-row tm-mt-big tm-mb-medium">
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 tm-about-col-left">
+          <div class="tm-v-center tm-bg-gray h-100 tm-about-text">
+            <h2 class="tm-text-brown mb-4 tm-about-h2">National Park Forester</h2>
+            <p class="tm-about-description mb-0">Our park is a place from the purest points of imaginations. The true heaven on earth</p>
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+          <div class="tm-about-img"></div>
+        </div>
+      </div>
+
+      <div class="row tm-about-row tm-mb-medium">
+        <div class="tm-tab-links-container">
+
+          <ul class="nav nav-tabs" id="tmTab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link tm-bg-gray tm-media-v-center tm-tab-link active" data-id="0" id="home-tab" data-toggle="tab" href="#tab1" role="tab" aria-controls="home" aria-selected="true">
+                <p class="media-body mb-0 tm-media-link">Forest</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link tm-bg-gray tm-media-v-center tm-tab-link" data-id="1" id="profile-tab" data-toggle="tab" href="#tab2" role="tab" aria-controls="profile" aria-selected="false">
+                <p class="media-body mb-0 tm-media-link">Lake</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link tm-bg-gray tm-media-v-center tm-tab-link" data-id="2" id="contact-tab" data-toggle="tab" href="#tab3" role="tab" aria-controls="contact" aria-selected="false">
+
+                <p class="media-body mb-0 tm-media-link">Sand dune</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link tm-bg-gray tm-media-v-center tm-tab-link" data-id="3" id="contact-tab" data-toggle="tab" href="#tab4" role="tab" aria-controls="contact" aria-selected="false">
+                
+                <p class="media-body mb-0 tm-media-link">Viewpoints</p>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+
+        <div class="tm-tab-content-container">
+          <div class="tab-content h-100 tm-bg-gray" id="myTabContent">
+            <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+              <div class="media tm-media-2">
+                <div class="media-body tm-media-body-2">
+                  <h2 class="mb-4 tm-text-blue-dark tm-media-2-header">Forest</h2>
+                  <p class="mb-4">The word forest broadly describes an area that has a large number of trees. <br/>There are three general types of forest that exist: temperate, tropical, and boreal. <br/> Experts estimate that these forests cover approximately one-third of Earth's surface. <br/> Our forest is a great place for long strolls and camping, you can spend your whole day enjoying the greenery of it, maybe even start a little barbecue party with people you came with.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- <div class="row tm-about-row tm-mb-medium">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+          <div class="embed-responsive embed-responsive-21by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/faqmNf_fZlE" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- Bottom links -->
+      <div class="row tm-about-row tm-mb-medium">
+        <div id="futerLeviNiz" class="col-xl-4 col-lg-4 col-md-4 col-sm-6 mb-4">
+          <h4 class="mb-4 tm-font-300">Navigation</h4>
+        </div>
+        <div id="futerSrednjiNiz" class="col-xl-4 col-lg-4 col-md-4 col-sm-6 mb-4">
+          <h4 class="mb-4 tm-font-300">Socials</h4>
+        </div>
+        <div id="futerDesniNiz" class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+          <h4 class="mb-4 tm-font-300">Files</h4>
+        </div>
+      </div>
+      <footer class="row tm-about-row">
+        <div class="col-xl-12">
+          <p class="text-center p-4">Copyright &copy; <span class="tm-current-year"></span></p>
+        </div>
+      </footer>
+    </div> <!-- .container -->
+
+  </div> <!-- .main -->
+  <!-- load JS -->
+  <script src="js/jquery-3.2.1.slim.min.js"></script> <!-- https://jquery.com/ -->
+  <!-- <script src="js/bootstrap.min.js"></script>         https://getbootstrap.com/ -->
+  <script>
+
+    /* DOM is ready
+    ------------------------------------------------*/
+    $(function () {
+
+      if (renderPage) {
+        $('body').addClass('loaded');
+      }
+
+      $('.tm-current-year').text(new Date().getFullYear());  // Update year in copyright
+    });
+
+  </script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery-toasts.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

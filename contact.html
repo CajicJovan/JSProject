@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>National Park Forester</title>
+<!--
+
+Template 2101 Insertion
+
+http://www.tooplate.com/view/2101-insertion
+
+-->
+  <!-- load CSS -->
+  <link rel="shortcut icon" href="img/realicon.ico" type="icon">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">        <!-- Google web font "Open Sans" -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">                                            <!-- https://getbootstrap.com/ -->
+  <link rel="stylesheet" href="css/fontawesome-all.min.css">                                      <!-- Font awesome -->
+  <link rel="stylesheet" href="css/tooplate-style.css">             
+  <link rel="stylesheet" href="css/style.css">  
+  <link rel="stylesheet" href="css/jquery-toasts.css">                             <!-- Templatemo style -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <script>
+    var renderPage = true;
+
+    if (navigator.userAgent.indexOf('MSIE') !== -1
+      || navigator.appVersion.indexOf('Trident/') > 0) {
+      /* Microsoft Internet Explorer detected in. */
+      alert("Please view this in a modern browser such as Chrome or Microsoft Edge.");
+      renderPage = false;
+    }
+  </script>
+
+</head>
+
+<body>
+
+  <!-- Loader -->
+  <!-- <div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div> -->
+
+  <div class="tm-main">
+
+    <div class="tm-welcome-section">
+      <div class="container tm-navbar-container">
+        <div class="row">
+          <div class="col-xl-12">
+            <nav class="navbar">
+              <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
+               aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text"><i
+                  class="fas fa-bars fa-1x"></i></span></button>
+              <div class="collapse navbar-collapse show" id="navbarSupportedContent1">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link tm-nav-link tm-text-white">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="about.html" class="nav-link tm-nav-link tm-text-white">About</a>
+                </li>
+                <li class="nav-item active">
+                  <a href="contact.html" class="nav-link tm-nav-link tm-text-white active">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a href="author.html" class="nav-link tm-nav-link tm-text-white">Author</a>
+                </li>
+              </ul>
+            </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center tm-welcome-container">
+        <div class="tm-welcome" id='sliderContainer'>
+          <div id="text"><h1>National Park Forester</h1><br><h2>Our park is a place from the purest points of imaginations. The true heaven on earth</h2></div>
+          <span id="slider-levo" class="slider-strela" data-smer="levo"><i class="fas fa-arrow-left"></i></span>
+          <span id="slider-desno" class="slider-strela" data-smer="desno"><i class="fas fa-arrow-right"></i></span>
+          <div class="overlay"> <img src="img/slide1.jpg" alt="slide1.jpg"/></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- <div class="container">
+      <div class="slider-container tm-bg-light-green">
+      </div> -->
+
+      <div class="row tm-mt-big tm-about-row tm-mb-medium">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-xs-12 tm-contact-col">
+          <div class="tm-contact-left tm-bg-light-green tm-text-white text-right p-md-5 p-4">
+            <i class="fas fa-3x fa-comments mb-4"></i>
+            <h2 class="tm-media-2-header ">Contact Us</h2>
+          </div>
+          <div class="tm-bg-gray tm-contact-middle">
+            <form action="#" method="post">
+              <div class="form-group mb-4">
+                <input type="text" id="contact_firstname" autocomplete="off" name="contact_name" class="form-control" placeholder="First Name"/>
+                <p id="err-ime" class="d-none" style="color:red">Invalid Name format.</p>
+              </div>
+              <div class="form-group mb-4">
+                <input type="text" id="contact_lastname" autocomplete="off" name="contact_name" class="form-control" placeholder="Last Name"/>
+                <p id="err-prezime" class="d-none" style="color:red">Invalid Last Name format.</p>
+              </div>
+              <div class="form-group mb-4">
+                <input type="email" id="contact_email" autocomplete="off" name="contact_email" class="form-control" placeholder="Email"/>
+                <p id="err-email" class="d-none" style="color:red">Invalid email format</p>
+              </div>
+              <!-- <div class="form-group mb-4">
+                <select name="position" class="tm-select" id="position">
+                  <option value="">Your Position</option>
+                  <option value="staff">- Staff</option>
+                  <option value="manager">- Manager</option>
+                  <option value="director">- Director</option>
+                  <option value="owner">- Owner</option>
+                </select>
+              </div> -->
+              <div class="form-group mb-0 tm-select-group">
+                <label class="tm-radio-label"><input type="radio" name="dept" value="support" class="mr-1"> Visitor</label>
+                <label class="tm-radio-label"><input type="radio" name="dept" value="sales" class="mr-1"> Influencer</label>
+              </div>
+              <p id="err-dept" class="d-none" style="color:red">Select department</p>
+              <div class="form-group mb-4">
+                <textarea rows="8" id="contact_message" name="contact_message" class="form-control" placeholder="Your Message"></textarea>
+                <p id="err-msg" class="d-none" style="color:red">Message must contain between 5 and 100 characters</p>
+              </div>
+              <div class="form-group mb-0">
+                <button type="submit" id="potvrdiFormu" class="btn btn-secondary">Submit</button>
+              </div>
+            </form>
+          </div>
+          <div class="tm-bg-gray tm-contact-right">
+            <!-- GOOGLE MAP -->
+             <div id="google-map" class="text-center mb-5">
+             <!-- How to change your own map point
+                    1. Go to Google Maps
+                    2. Click on your location point
+                    3. Click "Share" and choose "Embed map" tab
+                    4. Copy only URL and paste it within the src="" field below
+              -->
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3647.3030413476204!2d100.5641230193719!3d13.757206847615207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf51ce6427b7918fc!2sG+Tower!5e0!3m2!1sen!2sth!4v1510722015945" width="360" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+             </div>
+
+             <div>
+               <h2 class="tm-media-2-header tm-text-pink-dark mb-3">Our Location</h2>
+               <address class="mb-4">
+                 National Park Forester,<br>
+                 Nevada<br>
+               </address>
+                <p class="mb-0">Tel: <a href="tel:+0100200980" class="tm-link-gray">069-069-0980</a></p>
+             </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom links -->
+      <div class="row tm-about-row tm-mb-medium">
+        <div id="futerLeviNiz" class="col-xl-4 col-lg-4 col-md-4 col-sm-6 mb-4">
+          <h4 class="mb-4 tm-font-300">Navigation</h4>
+        </div>
+        <div id="futerSrednjiNiz" class="col-xl-4 col-lg-4 col-md-4 col-sm-6 mb-4">
+          <h4 class="mb-4 tm-font-300">Socials</h4>
+        </div>
+        <div id="futerDesniNiz" class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+          <h4 class="mb-4 tm-font-300">Files</h4>
+        </div>
+      </div>
+      <footer class="row tm-about-row">
+        <div class="col-xl-12">
+          <p class="text-center p-4">Copyright &copy; <span class="tm-current-year"></span></p>
+        </div>
+      </footer>
+    </div> <!-- .container -->
+
+  </div> <!-- .main -->
+
+  <!-- load JS -->
+  <script src="js/jquery-3.2.1.slim.min.js"></script> <!-- https://jquery.com/ -->        <!-- https://getbootstrap.com/ -->
+  <script>
+
+    /* DOM is ready
+    ------------------------------------------------*/
+    $(function () {
+
+      if (renderPage) {
+        $('body').addClass('loaded');
+      }
+
+      $('.tm-current-year').text(new Date().getFullYear());  // Update year in copyright
+    });
+
+  </script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery-toasts.js"></script>
+  <script src="js/main.js"></script>
+
+  
+</body>
+</html>
